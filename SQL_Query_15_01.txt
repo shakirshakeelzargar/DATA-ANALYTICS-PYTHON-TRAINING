@@ -1,0 +1,29 @@
+select * from employees
+
+insert into employees(e_id, e_name, e_salary, e_dept)
+values(3,'Satish',45000,'HR')
+
+insert into employees
+values(4,'Satish',45000,'HR')
+
+insert into employees(e_id, e_name, e_salary)
+values(5,'Satish',45000)
+
+select * into NewEmployee from Employees
+
+select * from NewEmployee
+
+insert into employees select * from NewEmployee
+
+truncate table employees
+
+select * from employees
+
+--update
+
+Update Employees 
+set e_name='Manish', e_dept='Finance'
+where e_id=5
+
+--delete
+delete from employees where e_id=5
